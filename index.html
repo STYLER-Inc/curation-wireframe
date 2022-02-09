@@ -4,6 +4,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
 
+    <script src="example.js"></script>
+
     <script>
       const widgetDefinitions = [
         {
@@ -122,7 +124,7 @@
 '熊本',
 'その他']
 
-      const content = JSON.parse(localStorage.getItem('content') || '[]')
+      const content = JSON.parse(localStorage.getItem('content') || exampleData)
 
       function createParameter(parameter) {
         return {

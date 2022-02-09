@@ -124,7 +124,7 @@
 '熊本',
 'その他']
 
-      const content = JSON.parse(localStorage.getItem('content') || exampleData)
+      const content = JSON.parse(localStorage.getItem('content') || JSON.stringify(exampleData))
 
       function createParameter(parameter) {
         return {
